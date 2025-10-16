@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section of your website.</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>This section is about you or your project.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Click the button to see a greeting:</p>
+            <button onclick="showMessage()">Say Hello</button>
+            <p id="greeting"></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 My Website
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById('greeting').innerText = 'Hello! You clicked the button.';
+        }
+    </script>
+</body>
+</html>
